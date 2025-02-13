@@ -1,0 +1,8 @@
+<h1>Welcome to the Home Page</h1>
+
+<p>{{ message }}</p> <!-- Displays the message -->
+<button (click)="updateMessage()">Click Me</button> <!-- Button to update message -->
+
+<h2>API Data</h2>
+<p *ngIf="loading">Loading...</p> <!-- Shows "Loading..." while fetching -->
+<p *ngIf="!loading">Title: {{ apiData?.title }}</p> <!-- Shows API data when loaded -->
